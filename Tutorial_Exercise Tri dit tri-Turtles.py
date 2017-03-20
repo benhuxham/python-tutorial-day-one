@@ -7,7 +7,7 @@ wn_bgcolour = "lightgreen"
 tess = turtle.Turtle()
 tess_shape = "turtle"
 tess_colour = "blue"
-tess_size = 20
+tess_size = 3
 tess_increase = .3
 tess_forward = tess_size
 tess_right = 24
@@ -23,4 +23,6 @@ for i in range(tess_steps):
     tess.forward(tess_forward)
     tess.right(tess_right)
 
+tess_colour = "red"
+tess.color(tess_colour)
 wn.mainloop()
