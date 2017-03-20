@@ -6,23 +6,45 @@ import turtle
 
 wn = turtle.Screen()
 
-turtle_background_colour = input("What colour would you like the background to be? ")
-tess_colour = input("What colour would you like the Tess to be? ")
-tess_pen_width = int(input("What width would you like the pen to be? "))
 
-wn.bgcolor(turtle_background_colour)
-wn.title("Hello, Tess")
 alex = turtle.Turtle()
-alex.forward(50)
-alex.left(90)
-alex.forward(30)
-
 tess = turtle.Turtle()
+
+turtle_background_colour = "blue"
+tess_colour = "red"
+tess_pen_width = 5
+
 tess.color(tess_colour)
 tess.pensize(tess_pen_width)
 
-tess.forward(50)
-tess.left(120)
-tess.forward(50)
+wn.bgcolor(turtle_background_colour)
+wn.title("Hello, Tess")
+
+alex_right = 180
+alex_left = 90
+alex_forward = 50
+alex_backward = 10
+
+tess_right = 180
+tess_left = 120
+tess_forward = 80
+tess_backward = 10
+
+tess.forward(tess_forward)
+tess.left(tess_left)
+tess.forward(tess_forward)
+tess.left(tess_left)
+tess.forward(tess_forward)
+
+alex.forward(alex_forward)
+alex.left(alex_left)
+alex.forward(alex_forward)
+alex.left(alex_left)
+alex.forward(alex_forward)
+alex.left(alex_left)
+alex.forward(alex_forward)
+alex.left(alex_left)
+
+
 
 wn.mainloop()
