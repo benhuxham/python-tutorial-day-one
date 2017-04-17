@@ -11,7 +11,7 @@ tess_size = 3
 tess_increase = .3
 tess_forward = tess_size
 tess_right = 24
-tess_steps = 80
+tess_steps = 800
 
 tess.shape(tess_shape)
 tess.color(tess_colour)
@@ -26,3 +26,4 @@ for i in range(tess_steps):
 tess_colour = "red"
 tess.color(tess_colour)
 wn.mainloop()
+
